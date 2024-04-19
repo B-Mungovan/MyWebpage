@@ -17,8 +17,8 @@ header h1{
     text-align: center; 
     font-size: 6.5rem;
     font-weight: 400;
-    margin:0;
     padding-bottom: 0;
+    margin-top: 3rem;
 }
  header h2{
     margin-top: -80px;
@@ -31,7 +31,7 @@ header h1{
     font-family: 'Josefin Sans';
     padding: 0 50px;
     margin: 0 20px;
-    height: 35px;
+    height: 40px;
     border-style: solid;
     border-radius: 20px;
     border-color: #9dbbbb;
@@ -43,31 +43,56 @@ header h1{
 
 section {
     padding: 30px;
-    text-align: left; 
-    max-width: 600px;
+    text-align: center; 
     border-radius: 10px;
+    margin: auto;
+}
+
+#about h2{
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    font-weight: 400;
+    padding-top: 20rem;
+}
+
+#about p{
+    font-family: 'Josefin Sans';
     font-size: larger;
-
+    margin: 0 2rem;
+    padding: 1rem 1rem;
+    
 }
 
-#skills{
+#skills h2, #projects h2{
+    padding-top: 15rem;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+#projects{
+    display: flex;
     flex-direction: column;
+    margin: auto;
+    align-content: center;
+    flex-wrap: wrap;
+    
 }
 
-#skills span{
-    font-size: 5rem;
-    padding: 20px;
+.project_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-section h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
+#projects i{
+    font-size: 3rem;
 }
 
-form {
-    max-width: 400px;
-    margin: 20px auto 0;
-    padding: 20px;
-    border-radius: 10px;
+#projects p{
+    font-size: 2rem;
+    padding: 0 1.5rem;
 }
 
+#skills i{
+    font-size: 3.5rem;
+    padding: 1rem;
+}
