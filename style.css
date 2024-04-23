@@ -27,11 +27,8 @@ header h1{
     font-size: 3.5rem;
     
  }
- header button{
+ header button, #contact button{
     font-family: 'Josefin Sans';
-    padding: 0 50px;
-    margin: 0 20px;
-    height: 40px;
     border-style: solid;
     border-radius: 20px;
     border-color: #9dbbbb;
@@ -39,6 +36,13 @@ header h1{
     background-color: #3d3d3d;
     font-weight: 400;
     font-size: medium;
+    height: 40px;
+    width: 10rem;
+ }
+
+ header button{
+    padding: 0 50px;
+    margin: 0 20px;
  }
 
 section {
@@ -63,7 +67,7 @@ section {
     
 }
 
-#skills h2, #projects h2{
+#skills h2, #projects h2, #contact_heading{
     padding-top: 15rem;
     font-weight: 400;
     font-size: 3.5rem;
@@ -95,4 +99,83 @@ section {
 #skills i{
     font-size: 3.5rem;
     padding: 1rem;
+}
+
+#contact_heading{
+
+}
+
+#contact{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+#message p{
+    font-size: 1.5rem;
+    margin-bottom: -.5rem;
+}
+
+form, #message p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin: 0;
+}
+
+#contact input, #contact textarea{
+    border-style: none;
+    width: 30rem;
+    padding: 0;
+    margin: 5px 0;
+}
+#contact input{
+    height: 30px;
+}
+
+#contact button{
+    margin-top: 10px;
+}
+input:focus-within{
+ outline: none;
+}
+textarea:focus-within{
+    outline: none;
+}
+
+#contact input::placeholder, #contact textarea::placeholder{
+   font-family: 'Josefin Sans';
+   font-size: 1rem;
+}
+
+#contact input[type='text'], #contact input[type='email'],#contact textarea[type='text']{
+    font-family: 'Josefin Sans';
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 1rem;
+    color: #3d3d3d;
+}
+
+#message{
+    width: 50%;
+}
+
+#links{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.5rem;
+}
+
+#email,#phone,#linkedin,#github{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 2.5rem;
+}
+#email p,#phone p{
+    margin: 0 10px;
 }
