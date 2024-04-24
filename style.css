@@ -1,6 +1,3 @@
-html{
-    scroll-behavior: smooth;
-  }
 
 body {
     font-family:"Suranna"; 
@@ -70,7 +67,6 @@ section {
 }
 
 #about h2{
-    padding-bottom: 3rem;
     font-size: 3.5rem;
     font-weight: 400;
 }
@@ -89,7 +85,7 @@ section {
 }
 
 #skills, #projects, #about{
-    margin-bottom: 17rem;
+    margin-bottom: 10rem;
 }
 
 
@@ -124,7 +120,9 @@ section {
 #contact{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5rem;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 #message p{
@@ -173,6 +171,14 @@ textarea:focus-within{
     color: #3d3d3d;
 }
 
+#contact h2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+
+
 #message{
     width: 50%;
 }
@@ -194,4 +200,17 @@ textarea:focus-within{
 }
 #email p,#phone p{
     margin: 0 10px;
+}
+
+.reveal{
+    position: relative;
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+.reveal.active{
+    transform: translateY(-30px);
+    opacity: 1;
+}
+  .reveal.active2{
+    opacity: 1;
 }

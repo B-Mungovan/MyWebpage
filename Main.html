@@ -16,31 +16,31 @@
     <header>
         <h1>Ben Mungovan</h1>
         <h2>Full Stack Developer</h2>
-        <button onclick="document.getElementById('about').scrollIntoView();">About</button>
-        <button onclick="document.getElementById('projects').scrollIntoView();">Projects</button>
-        <button onclick="document.getElementById('skills').scrollIntoView();">Skills</button>
-        <button onclick="document.getElementById('contact').scrollIntoView();">Contact</button>
+        <button class="navbtn" onclick="document.getElementById('about').scrollIntoView();">About</button>
+        <button class="navbtn" onclick="document.getElementById('projects').scrollIntoView();">Projects</button>
+        <button class="navbtn" onclick="document.getElementById('skills').scrollIntoView();">Skills</button>
+        <button class="navbtn" onclick="document.getElementById('contact').scrollIntoView();">Contact</button>
     </header>
 
     <main>
-        <section id="about">
-            <h2>A Little About Me</h2>
-            <p>Hello! I'm Ben, and my journey into coding began with a part-time role as a front-end developer, where I discovered my passion for crafting user-friendly platforms. Currently, I'm working full-time as an Operations Assistant for a tooling company in Birmingham.</p>
-            <p>My ultimate goal is to become a professional full-stack developer. I'm deeply enthusiastic about creating visually appealing and intuitive interfaces. To achieve this goal, I'm actively expanding my skill set through platforms like Codecademy. I'm eager to delve deeper into new languages and technologies, driven by my desire to grow within the dynamic tech industry.</p>
+        <section id="about" class="reveal">
+            <h2 class="reveal">A Little About Me</h2>
+            <p class="reveal">Hello! I'm Ben, and my journey into coding began with a part-time role as a front-end developer, where I discovered my passion for crafting user-friendly platforms. Currently, I'm working full-time as an Operations Assistant for a tooling company in Birmingham.</p>
+            <p class="reveal">My ultimate goal is to become a professional full-stack developer. I'm deeply enthusiastic about creating visually appealing and intuitive interfaces. To achieve this goal, I'm actively expanding my skill set through platforms like Codecademy. I'm eager to delve deeper into new languages and technologies, driven by my desire to grow within the dynamic tech industry.</p>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
+        <section id="projects" class="reveal">
+            <h2 class="reveal">Projects</h2>
                 
-                <div class="project_container">
+                <div class="project_container reveal">
                     <i class="fa-solid fa-arrow-right-long"></i>
                     <p>Mixed Messages</p>
                 </div>
-                <div class="project_container">
+                <div class="project_container reveal">
                     <i class="fa-solid fa-arrow-right-long"></i>
                     <p>Card Validator</p>
                 </div>
-                <div class="project_container">
+                <div class="project_container reveal">
                     <i class="fa-solid fa-arrow-right-long"></i>
                     <p>DNA Splicing</p>
                 </div>
@@ -48,8 +48,9 @@
            
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
+        <section id="skills" class="reveal">
+            <h2 class="reveal">Skills</h2>
+            <div class="reveal">
             <i class="fa-brands fa-html5"></i>
             <i class="fa-brands fa-css3-alt"></i>
             <i class="fa-brands fa-square-js"></i>
@@ -59,48 +60,50 @@
             <i class="fa-solid fa-terminal"></i>
             <i class="fa-brands fa-chrome"></i>
             <i class="fa-brands fa-react"></i>
+            </div>
         </section>
 
-        <h2 id="contact_heading">Get In Touch!</h2>
+        
 
-        <section id="contact">
+        <section id="contact" class="reveal">
+            <h2 id="contact_heading" class="reveal">Get In Touch!</h2>
 
-        <div id="message">  
-            <p>Leave a Message</p>
-            <form>
-                <div>
-                    <input name="name" id="name" type="text" placeholder="Name" required>
+            <div id="message" class="reveal">  
+                <p>Leave a Message</p>
+                <form>
+                    <div>
+                        <input name="name" id="name" type="text" placeholder="Name" required>
+                    </div>
+                    
+                    <div>
+                        <input email="email" id="email" type="email" placeholder="Email" required>
+                    </div>
+
+                    <textarea rows="5" cols="60" name="message" placeholder="Message"  type='text' required></textarea>
+
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="links" class="reveal">
+
+                <div id="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>Benmungovan@hotmail.com</p>
                 </div>
-                
-                <div>
-                    <input email="email" id="email" type="email" placeholder="Email" required>
+                <div id="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>0755365384</p>
                 </div>
-
-                <textarea rows="5" cols="60S" name="message" placeholder="Message"  type='text' required></textarea>
-
-                <div>
-                    <button type="submit">Submit</button>
+                <div id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
                 </div>
-            </form>
-        </div>
-
-        <div id="links">
-
-            <div id="email">
-                <i class="fa-solid fa-envelope"></i>
-                <p>Benmungovan@hotmail.com</p>
+                <div id="github">
+                    <i class="fa-brands fa-github"></i>
+                </div>
             </div>
-            <div id="phone">
-                <i class="fa-solid fa-phone"></i>
-                <p>0755365384</p>
-            </div>
-            <div id="linkedin">
-                <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <div id="github">
-                <i class="fa-brands fa-github"></i>
-            </div>
-        </div>
 
         </section>
        
@@ -109,4 +112,5 @@
         
     </footer>
 </body>
+<script src="scroll_animation.js"></script>
 </html>
