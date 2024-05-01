@@ -15,10 +15,12 @@
     <header>
         <h1>Ben Mungovan</h1>
         <h2>Full Stack Developer</h2>
-        <button class="navbtn" onclick="document.getElementById('about').scrollIntoView();">About</button>
-        <button class="navbtn" onclick="document.getElementById('projects').scrollIntoView();">Projects</button>
-        <button class="navbtn" onclick="document.getElementById('skills').scrollIntoView();">Skills</button>
-        <button class="navbtn" onclick="document.getElementById('contact').scrollIntoView();">Contact</button>
+        <div id="navbutton_container">
+            <button class="navbtn" onclick="document.getElementById('about').scrollIntoView();" type="button">About</button>
+            <button class="navbtn" onclick="document.getElementById('projects').scrollIntoView();" type="button">Projects</button>
+            <button class="navbtn" onclick="document.getElementById('skills').scrollIntoView();" type="button">Skills</button>
+            <button class="navbtn" onclick="document.getElementById('contact').scrollIntoView();" type="button">Contact</button>
+        </div>
     </header>
 
     <main>
@@ -49,7 +51,7 @@
 
         <section id="skills" class="reveal">
             <h2 class="reveal">Skills</h2>
-            <div class="reveal">
+            <div  id="skills_icons" class="reveal">
             <i class="fa-brands fa-html5"></i>
             <i class="fa-brands fa-css3-alt"></i>
             <i class="fa-brands fa-square-js"></i>
@@ -65,9 +67,9 @@
         
 
         <section id="contact" class="reveal">
-            <h2 id="contact_heading" class="reveal">Get In Touch!</h2>
-
-            <div id="message" class="reveal">  
+            <h2 id="contact_heading">Get In Touch!</h2>
+            
+            <div id="message">  
                 <p>Leave a Message</p>
                 <form>
                     <div>
@@ -86,7 +88,7 @@
                 </form>
             </div>
 
-            <div id="links" class="reveal">
+            <div id="links" >
 
                 <div id="email">
                     <a href="mailto:benmungovan1@hotmail.com">
